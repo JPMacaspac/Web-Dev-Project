@@ -1,0 +1,18 @@
+.mq {
+  position: relative;
+  z-index: 2;
+  margin: -1rem -2% 0;
+  padding: .9rem 0;
+  background: var(--honey);
+  color: var(--cocoa-700);
+  overflow: hidden;
+  white-space: nowrap;
+  transform: rotate(-1.2deg);
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.mq-track { display: inline-block; animation: mq-scroll 26s linear infinite; }
+.mq-track span { margin: 0 1.6rem; }
+@keyframes mq-scroll { to { transform: translateX(-50%); } }

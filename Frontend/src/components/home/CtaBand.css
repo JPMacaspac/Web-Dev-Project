@@ -1,0 +1,28 @@
+.band {
+  padding: 5rem var(--space-3);
+  text-align: center;
+  background: linear-gradient(135deg, var(--honey), var(--caramel));
+  color: var(--cocoa-700);
+  overflow: hidden;
+}
+.band h2 { color: var(--cocoa-700); font-size: clamp(2rem, 5vw, 3.4rem); }
+.band-eyebrow {
+  display: block;
+  margin-bottom: .8rem;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+}
+.band-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .95rem 2.2rem;
+  border-radius: var(--radius-pill);
+  background: var(--cocoa-700);
+  color: var(--honey-light);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .3s var(--ease), background .3s, opacity .8s var(--ease);
+}
+.band-btn:hover { transform: translateY(-3px); background: var(--cocoa-900); }

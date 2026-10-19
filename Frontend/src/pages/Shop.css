@@ -1,0 +1,82 @@
+.shop { padding: calc(var(--nav-h) + 3rem) var(--space-3) 5rem; }
+.shop-inner { max-width: 1180px; margin: 0 auto; }
+
+.shop-hd { display: flex; justify-content: space-between; align-items: end; gap: 1.5rem; flex-wrap: wrap; }
+.shop-hd h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 0; }
+.shop-hd p { max-width: 44ch; margin: .6rem 0 0; opacity: .85; }
+
+.shop-cart {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .8rem 1.4rem;
+  border: 0;
+  border-radius: 99px;
+  background: var(--honey);
+  color: var(--cocoa-700);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .3s var(--ease);
+}
+.shop-cart:hover { transform: translateY(-3px); }
+.shop-cart b {
+  display: grid;
+  place-items: center;
+  min-width: 24px; height: 24px;
+  border-radius: 99px;
+  background: var(--cocoa-700);
+  color: var(--honey-light);
+  font-size: .8rem;
+}
+
+.shop-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2.2rem 0 1.6rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(246, 231, 207, .12);
+}
+.shop-chips { display: flex; gap: .6rem; flex-wrap: wrap; }
+.shop-chip {
+  padding: .5rem 1.1rem;
+  border: 1px solid rgba(232, 163, 61, .55);
+  border-radius: 99px;
+  background: none;
+  color: var(--honey-light);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .25s, color .25s;
+}
+.shop-chip.on, .shop-chip:hover { background: var(--honey); color: var(--cocoa-700); }
+
+.shop-sort { display: flex; gap: 1rem; align-items: center; }
+.shop-sort span { font-size: .9rem; opacity: .7; }
+.shop-sort select {
+  padding: .55rem 1rem;
+  border: 1px solid rgba(232, 163, 61, .45);
+  border-radius: 99px;
+  background: var(--cocoa-800);
+  color: #fff;
+  font: inherit;
+}
+
+.shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.4rem; }
+
+.shop-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+  padding: 1.4rem 1.6rem;
+  border: 1px dashed rgba(232, 163, 61, .5);
+  border-radius: 18px;
+}
+.shop-note b { color: #fff; }
+.shop-note a { color: var(--honey-light); font-weight: 700; text-decoration: none; }

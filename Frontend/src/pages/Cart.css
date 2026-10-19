@@ -1,0 +1,28 @@
+.cart-page {
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  border-bottom: 1px solid #333;
+  padding: 12px 0;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-total {
+  margin-top: 24px;
+}
+
+.empty-cart {
+  padding: 60px 24px;
+}

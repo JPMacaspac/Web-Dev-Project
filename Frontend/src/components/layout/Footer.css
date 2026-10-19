@@ -1,0 +1,9 @@
+.ft { padding: 3rem var(--space-3) 1.5rem; background: var(--cocoa-900); text-align: center; overflow: hidden; }
+.ft-big {
+  margin-bottom: 1.2rem;
+  font: 700 clamp(3rem, 14vw, 11rem)/.9 var(--font-display);
+  letter-spacing: -.04em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(246, 231, 207, .3);
+}
+.ft p { margin: 0; font-size: .85rem; opacity: .7; }

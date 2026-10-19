@@ -1,0 +1,20 @@
+.pr { padding: var(--space-6) var(--space-4); background: var(--cocoa-700); }
+.pr-inner { max-width: 1180px; margin: 0 auto; }
+.pr h2 { font-size: clamp(2rem, 4.6vw, 3.2rem); }
+
+.pr-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 2.5rem; }
+.pr-step {
+  background: var(--cocoa-800);
+  border: 1px solid rgba(246, 231, 207, .08);
+  border-radius: 18px;
+  padding: 1.6rem;
+  transition: transform .35s var(--ease), border-color .35s, background .35s, opacity .8s var(--ease);
+}
+.pr-step:hover { transform: translateY(-8px); border-color: var(--honey); background: var(--cocoa-600); }
+.pr-n { font: 700 .8rem var(--font-display); color: var(--honey); letter-spacing: .2em; }
+.pr-ic { font-size: 2.2rem; margin: .6rem 0; }
+.pr-step h3 { font-size: 1.3rem; }
+.pr-step p { margin: 0; font-size: .95rem; opacity: .85; }
+
+@media (max-width: 900px) { .pr-steps { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .pr { padding-inline: var(--space-3); } .pr-steps { grid-template-columns: 1fr; } }
